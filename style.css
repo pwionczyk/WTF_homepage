@@ -2,26 +2,7 @@ body {
   background-color: #efefef;
   font-family: Verdana;
 }
-header,
-footer {
-  margin: 0.5em;
-  padding: 0.1em;
-  background-color: #a8dadc;
-}
-main {
-  margin: 0.5em;
-  padding: 0;
-}
-section {
-  background-color: #a8dadc;
-  padding: 5px 5px;
-  margin: 0;
-}
-article {
-  background-color: #f1faee;
-  margin: 0.3em;
-  padding: 3px 10px;
-}
+
 .site-header {
   width: 60vw;
   margin: 10px auto;
@@ -47,6 +28,10 @@ article {
   border-radius: 10px;
   color: #457b9d;
 }
+.site-header__link:hover {
+  text-decoration-color: lime;
+}
+
 
 .section {
   width: 60vw;
@@ -57,6 +42,30 @@ article {
   border-radius: 20px;
   padding: 20px;
 }
+.article {
+  background-color: #f1faee;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.article__header {
+  margin-bottom: 10px;
+  padding: 0;
+  text-decoration: underline;
+}
+.article__content {
+  margin: 0;
+  color: #457b9d;
+}
+.article__unordered-list {
+  margin: 0;
+}
+.article__unordered-list-element {
+  padding-top: 2px;
+  color: #457b9d;
+  list-style: square;  
+}
+
 
 .site-footer {
   width: 60vw;
@@ -65,20 +74,9 @@ article {
   background-color: #a8dadc;
   border: 1px solid #567b7c;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px;
 }
-
-p,
-li {
-  margin: 5px;
-  color: #457b9d;
-}
-nav a {
-  color: #e63946;
-}
-nav a:active {
-  text-decoration: none;
-}
-nav a:hover {
-  text-decoration-color: lime;
+.site-footer__header {
+  font: italic bolder 1.2em;
+  color: #1d3557;
 }
