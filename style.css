@@ -4,18 +4,14 @@ body {
 }
 
 .site-header {
+  box-sizing: border-box;
   width: 60vw;
   margin: 10px auto;
   position: relative;
   background-color: #a8dadc;
   border: 1px solid #567b7c;
   border-radius: 20px;
-  padding: 20px;
-}
-.site-header__icon {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
+  padding: 0 15px 15px 15px;
 }
 .site-header__header {
   font: small-caps bold 2em/3em;
@@ -34,27 +30,35 @@ body {
 
 
 .section {
+  box-sizing: border-box;
   width: 60vw;
   margin: 10px auto;
   position: relative;
   background-color: #a8dadc;
   border: 1px solid #567b7c;
   border-radius: 20px;
-  padding: 20px;
+  padding: 0 15px;
 }
 .article {
   background-color: #f1faee;
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 10px;
+  overflow: hidden;
+  
 }
 .article__header {
-  margin-bottom: 10px;
+  float: left;
+  margin-right: 20px;
   padding: 0;
-  text-decoration: underline;
+}
+.article__header--other {
+  width: 100px;
+  text-align: center;
 }
 .article__content {
-  margin: 0;
+  text-indent: 2em;
+  padding-top: 3px;
   color: #457b9d;
 }
 .article__unordered-list {
@@ -68,13 +72,14 @@ body {
 
 
 .site-footer {
+  box-sizing: border-box;
   width: 60vw;
   margin: 10px auto;
   position: relative;
   background-color: #a8dadc;
   border: 1px solid #567b7c;
   border-radius: 20px;
-  padding: 10px;
+  padding: 0 15px;
 }
 .site-footer__header {
   font: italic bolder 1.2em;
