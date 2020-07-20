@@ -1,17 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
-  background-color: #efefef;
+  background: rgb(171,241,191);
+  background: linear-gradient(90deg, rgba(171,241,191,1) 0%, rgba(209,231,242,1) 64%, rgba(176,242,237,1) 100%);
   font-family: Verdana;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-header {
-  box-sizing: border-box;
   width: 60vw;
-  margin: 10px auto;
+  margin: 10px;
   position: relative;
-  background-color: #a8dadc;
   border: 1px solid #567b7c;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 0 15px 15px 15px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
 }
 .site-header__header {
   font: small-caps bold 2em/3em;
@@ -20,24 +34,27 @@ body {
 .site-header__link {
   display: inline-block;
   border: 1px dotted #266942;
-  padding: 5px;
+  padding: 5px 20px;
   border-radius: 10px;
   color: #457b9d;
 }
 .site-header__link:hover {
   text-decoration-color: lime;
 }
+.site-header__navigation {
+  display: flex;
+  justify-content: space-around;
+}
 
-
-.section {
-  box-sizing: border-box;
+.main {
   width: 60vw;
-  margin: 10px auto;
+  margin: 10px;
   position: relative;
-  background-color: #a8dadc;
   border: 1px solid #567b7c;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 0 15px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
 }
 .article {
   background-color: #f1faee;
@@ -45,7 +62,6 @@ body {
   padding: 10px;
   border-radius: 10px;
   overflow: hidden;
-  
 }
 .article__header {
   float: left;
@@ -67,19 +83,18 @@ body {
 .article__unordered-list-element {
   padding-top: 2px;
   color: #457b9d;
-  list-style: square;  
+  list-style: square;
 }
 
-
 .site-footer {
-  box-sizing: border-box;
   width: 60vw;
-  margin: 10px auto;
+  margin: 10px;
   position: relative;
-  background-color: #a8dadc;
   border: 1px solid #567b7c;
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 0 15px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
 }
 .site-footer__header {
   font: italic bolder 1.2em;

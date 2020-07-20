@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Przemysław Wionczyk - szkolenie WTF</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -19,66 +20,70 @@
     </header>
 
     <main class="main">
-      <section class="section">
-        <h2 class="section__header">Tydzień trzeci</h2>
+      <h2 class="main__header">Tydzień trzeci</h2>
 
-        <article class="article">
-          <h3 class="article__header"><img src="icons/html.png" alt="HTML logo" width="100" /></h3>
-          <p class="article__content">
-            Podczas trzeciego tygodnia przypomniana została różnica między
-            znacznikami strong oraz em a znacznikami b oraz i. Wrowadzone
-            zostały znaczniki a, img, nav oraz atrybuty style i id.
-          </p>
-        </article>
+      <article class="article">
+        <h3 class="article__header">
+          <img src="icons/html.png" alt="HTML logo" width="100" />
+        </h3>
+        <p class="article__content">
+          Podczas trzeciego tygodnia przypomniana została różnica między
+          znacznikami strong oraz em a znacznikami b oraz i. Wrowadzone zostały
+          znaczniki a, img, nav oraz atrybuty style i id.
+        </p>
+      </article>
 
-        <article class="article">
-          <h3 class="article__header"><img src="icons/css.png" alt="CSS logo" width="100" /></h3>
-          <p class="article__content">
-            W ramach nauki CSS wprowadzone zostały selektory klas oraz id.
-            Wyjaśnione znaczenie klauzuli
-            <strong>!important</strong> oraz zasady liczenia specyficzności.
-            Przydały się, bo znałem wcześniej tylko część tej wiedzy.
-          </p>
-        </article>
+      <article class="article">
+        <h3 class="article__header">
+          <img src="icons/css.png" alt="CSS logo" width="100" />
+        </h3>
+        <p class="article__content">
+          W ramach nauki CSS wprowadzone zostały selektory klas oraz id.
+          Wyjaśnione znaczenie klauzuli
+          <strong>!important</strong> oraz zasady liczenia specyficzności.
+          Przydały się, bo znałem wcześniej tylko część tej wiedzy.
+        </p>
+      </article>
 
-        <article class="article">
-          <h3 class="article__header"><img src="icons/js.png" alt="JS logo" width="100" /></h3>
-          <p class="article__content">
-            W trzecim tygodniu pojawił się wstęp do języka JavaScript wraz z
-            <em>zaleceniem</em> by nie mylić go z językiem Java. Do zapamiętania
-            jest, iż JavaScript implementuje to co wprowadzane jest do
-            ustandaryzowanego języka ECMAScript. Wersja ECMAScript, która będzie
-            wyskorzystywana w kursie to wersja 2015+ (lub inaczej ES6+).
-            Przedstawiony został sposób dodawania kodu JS do strony (wewnątrz
-            lub na zewnątrz pliku). Przedstawione zostały również podstawowe
-            elementy tego języka (nic dla mnie odkrywczego). Jedynie notacja
-            <quote>console.log(`Nazywam się ${name} i mam ${age} lat`);</quote>
-            jest warta zapamiętania, gdyż nie wiedziałem, że JS pozwala na taki
-            zapis.
-          </p>
-        </article>
+      <article class="article">
+        <h3 class="article__header">
+          <img src="icons/js.png" alt="JS logo" width="100" />
+        </h3>
+        <p class="article__content">
+          W trzecim tygodniu pojawił się wstęp do języka JavaScript wraz z
+          <em>zaleceniem</em> by nie mylić go z językiem Java. Do zapamiętania
+          jest, iż JavaScript implementuje to co wprowadzane jest do
+          ustandaryzowanego języka ECMAScript. Wersja ECMAScript, która będzie
+          wyskorzystywana w kursie to wersja 2015+ (lub inaczej ES6+).
+          Przedstawiony został sposób dodawania kodu JS do strony (wewnątrz lub
+          na zewnątrz pliku). Przedstawione zostały również podstawowe elementy
+          tego języka (nic dla mnie odkrywczego). Jedynie notacja
+          <quote>console.log(`Nazywam się ${name} i mam ${age} lat`);</quote>
+          jest warta zapamiętania, gdyż nie wiedziałem, że JS pozwala na taki
+          zapis.
+        </p>
+      </article>
 
-        <article class="article">
-          <h3 class="article__header article__header--other">Inne</h3>
-          <p class="article__content">
-            W ramach spraw nie związanych bezpośrednio z trójką głównych języków
-            pojawiło się przestawienie
-            <strong>systemu Kanban</strong>, służącego do wspomagania
-            systematyczności i kontroli nad projektem. Zacząłem go wykorzystywać
-            do pilnowania samego siebie podczas nauki.
-          </p>
-          <p class="article__content">
-            Pojawiła się również opowieść o głównych sposobach zapisu nazw w
-            programowaniu, czyli o:
-          </p>
-          <ul class="article__unordered-list">
-            <li class="article__unordered-list-element">camelCase,</li>
-            <li class="article__unordered-list-element">kebab-case,</li>
-            <li class="article__unordered-list-element">snake_case,</li>
-            <li class="article__unordered-list-element">PascalCase.</li>
-          </ul>
-        </article>
-      </section>
+      <article class="article">
+        <h3 class="article__header article__header--other">Inne</h3>
+        <p class="article__content">
+          W ramach spraw nie związanych bezpośrednio z trójką głównych języków
+          pojawiło się przestawienie
+          <strong>systemu Kanban</strong>, służącego do wspomagania
+          systematyczności i kontroli nad projektem. Zacząłem go wykorzystywać
+          do pilnowania samego siebie podczas nauki.
+        </p>
+        <p class="article__content">
+          Pojawiła się również opowieść o głównych sposobach zapisu nazw w
+          programowaniu, czyli o:
+        </p>
+        <ul class="article__unordered-list">
+          <li class="article__unordered-list-element">camelCase,</li>
+          <li class="article__unordered-list-element">kebab-case,</li>
+          <li class="article__unordered-list-element">snake_case,</li>
+          <li class="article__unordered-list-element">PascalCase.</li>
+        </ul>
+      </article>
     </main>
 
     <footer class="site-footer">
