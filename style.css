@@ -16,39 +16,57 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.container {
+  margin: 8px 0;
+  width: 95vw;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .site-header {
-  width: 60vw;
-  margin: 10px;
-  position: relative;
+  display: float;
+  justify-content: center;
   border: 1px solid #567b7c;
   border-radius: 16px;
-  padding: 0 15px 15px 15px;
+  padding: 8px;
   background-color: #08AEEA;
   background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
 }
 .site-header__header {
+  display: inline-block;
   font: small-caps bold 2em/3em;
   color: #1d3557;
+  margin: 0;
 }
-.site-header__link {
+.aside {
+  display: float;
+  justify-content: center;
+  border: 1px solid #567b7c;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: #08AEEA;
+  background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
+}
+.aside__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.aside__link {
   display: inline-block;
   border: 1px dotted #266942;
-  padding: 5px 20px;
+  padding: 6px 16px;
+  margin: 8px;
   border-radius: 10px;
   color: #457b9d;
 }
-.site-header__link:hover {
+.aside__link:hover {
   text-decoration-color: lime;
-}
-.site-header__navigation {
-  display: flex;
-  justify-content: space-around;
 }
 
 .main {
-  width: 60vw;
-  margin: 10px;
   position: relative;
   border: 1px solid #567b7c;
   border-radius: 16px;
@@ -85,10 +103,11 @@ body {
   color: #457b9d;
   list-style: square;
 }
+.article__logo {
+  width: 100px;
+}
 
 .site-footer {
-  width: 60vw;
-  margin: 10px;
   position: relative;
   border: 1px solid #567b7c;
   border-radius: 16px;
@@ -99,4 +118,35 @@ body {
 .site-footer__header {
   font: italic bolder 1.2em;
   color: #1d3557;
+}
+@media screen and (max-width: 767px) {
+  .aside, .main {
+    margin: 10px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: minmax(300px, 20%) 1fr;
+    grid-template-areas: "header header" "aside main" "footer footer";
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+  .site-header {
+     grid-area: header;
+  }
+  .aside {
+     grid-area: aside;
+  }
+  .aside__navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+     grid-area: main;
+  }
+  .site-footer {
+     grid-area: footer;
+  }
 }

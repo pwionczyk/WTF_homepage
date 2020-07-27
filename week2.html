@@ -9,53 +9,60 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <h1 class="site-header__header">Przemysław Wionczyk - szkolenie WTF</h1>
-      <nav>
-        <a class="site-header__link" href="index.html">Strona główna</a>
-        <a class="site-header__link" href="week2.html">Tydzień nr 2</a>
-        <a class="site-header__link" href="week3.html">Tydzień nr 3</a>
-        <a class="site-header__link" href="week4.html">Tydzień nr 4</a>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="site-header">
+        <h1 class="site-header__header">Przemysław Wionczyk - szkolenie WTF</h1>
+      </header>
 
-    <main class="main">
-      <h2 class="main__header">Tydzień drugi</h2>
-      <article class="article">
-        <h3 class="article__header">
-          <img src="icons/html.png" alt="HTML logo" width="100" />
-        </h3>
-        <p class="article__content">
-          W ramach tygodnia nr II poznałem (przypomniałem sobie) znaczniki
-          semantycznej budowy szkieletu strony. Do wstępnej budowy tej strony
-          użyłem takich znaczników jak header, main, section, article oraz
-          footer.
-        </p>
-      </article>
-      <article class="article">
-        <h3 class="article__header">
-          <img src="icons/css.png" alt="CSS logo" width="100" />
-        </h3>
-        <p class="article__content">
-          W tym tygodniu początek swój miała również nauka CSS, były informacje
-          o sposobach dołaczania styli oraz o ich budowie.
-        </p>
-      </article>
-      <article class="article">
-        <h3 class="article__header article__header--other">Inne</h3>
-        <p class="article__content">
-          Na koniec w materiale znalazło się zapoznanie z wbudowanymi w
-          przeglądarkę Chrome DevTools. Miałem już z nimi styczność wcześniej.
-        </p>
-      </article>
-    </main>
+      <aside class="aside">
+        <nav class="aside__navigation">
+          <a class="aside__link" href="index.html">Strona główna</a>
+          <a class="aside__link" href="week2.html">Tydzień nr 2</a>
+          <a class="aside__link" href="week3.html">Tydzień nr 3</a>
+          <a class="aside__link" href="week4.html">Tydzień nr 4</a>
+          <a class="aside__link" href="week5.html">Tydzień nr 5</a>
+          <a class="aside__link" href="week6.html">Tydzień nr 6</a>  
+        </nav>
+      </aside>
 
-    <footer class="site-footer">
-      <h4 class="site-footer__header">
-        Wszystkie zamieszczone treści są wynikiem realizacji nauki w ramach
-        szkolenia WTF i są własnością Przemysława Wionczyka
-      </h4>
-    </footer>
+      <main class="main">
+        <h2 class="main__header">Tydzień drugi</h2>
+        <article class="article">
+          <h3 class="article__header">
+            <img class="article__logo" src="icons/html.png" alt="HTML logo" />
+          </h3>
+          <p class="article__content">
+            W ramach tygodnia nr II poznałem (przypomniałem sobie) znaczniki
+            semantycznej budowy szkieletu strony. Do wstępnej budowy tej strony
+            użyłem takich znaczników jak header, main, section, article oraz
+            footer.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__header">
+            <img class="article__logo" src="icons/css.png" alt="CSS logo"  />
+          </h3>
+          <p class="article__content">
+            W tym tygodniu początek swój miała również nauka CSS, były
+            informacje o sposobach dołaczania styli oraz o ich budowie.
+          </p>
+        </article>
+        <article class="article">
+          <h3 class="article__header article__header--other">Inne</h3>
+          <p class="article__content">
+            Na koniec w materiale znalazło się zapoznanie z wbudowanymi w
+            przeglądarkę Chrome DevTools. Miałem już z nimi styczność wcześniej.
+          </p>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <h4 class="site-footer__header">
+          Wszystkie zamieszczone treści są wynikiem realizacji nauki w ramach
+          szkolenia WTF i są własnością Przemysława Wionczyka
+        </h4>
+      </footer>
+    </div>
 
     <script src="scripts.js"></script>
   </body>
