@@ -15,3 +15,12 @@ function invitation(name, age) {
     alert(`Dzień dobry. Nazywasz się ${name} i masz ${age} lata.`);
   else alert(`Dzień dobry. Nazywasz się ${name} i masz ${age} lat.`);
 }
+
+document.querySelector('.aside__menu-bar').addEventListener('click', () => {
+  const nav = document.querySelector(".aside__navigation");
+  if (nav.classList.contains("aside__navigation--visible"))
+    document.querySelector(".aside__menu-bar").innerHTML = "menu (click to open):";
+  else
+    document.querySelector(".aside__menu-bar").innerHTML = "menu (click to hide):";
+  nav.classList.toggle("aside__navigation--visible");
+});
