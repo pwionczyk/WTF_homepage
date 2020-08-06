@@ -1,0 +1,22 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "simple homepage for WTF learning\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[1;6D\u001b[1;6D\u001b[\u001b[C\u001b[C\u001b[WTF",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwionczyk/WTF_my_homepage.git"
+  },
+  "author": "Przemysław Wionczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwionczyk/WTF_my_homepage/issues"
+  },
+  "homepage": "https://github.com/pwionczyk/WTF_my_homepage#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
