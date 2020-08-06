@@ -42,6 +42,7 @@ body {
   display: inline-block;
   margin: 0;
 }
+
 .aside {
   display: float;
   justify-content: center;
@@ -90,6 +91,16 @@ body {
   background-color: #08AEEA;
   background-image: linear-gradient(50deg, #08AEEA 0%, #2AF598 100%);
 }
+.main__header::before {
+  display: inline-block;
+  content: "WTF:";
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 120%;
+  font-weight: bolder;
+  color: #457b9d;
+  margin: 15px;
+  text-shadow: 2px 2px 5px greenyellow;
+}
 .article {
   background-color: #f1faee;
   margin-bottom: 20px;
@@ -104,6 +115,14 @@ body {
 }
 .article__header--other {
   width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 24px;
+  color: #457b9d;
+  text-shadow: 2px 2px 5px greenyellow;
   text-align: center;
 }
 .article__content {
